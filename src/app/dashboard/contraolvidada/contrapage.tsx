@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link"
 
-
-export default function Home() {
+const contrapage = () => {
   return (
     <main className="h-screen w-screen gap-2 flex ">
       <div className="h-screen w-1/2 flex flex-col justify-center items-center ">
@@ -19,9 +17,7 @@ export default function Home() {
           <div className="flex flex-col space-y-5">
             <input className="border-2 border-gray-300 p-2 rounded-md" type="text" placeholder="Usuario" />
             <input className="border-2 border-gray-300 p-2 rounded-md" type="password" placeholder="Contraseña" />
-            <Link  href= "/principal">
             <button className="bg-[#00A886] text-white p-2 rounded-md">Iniciar sesión</button>
-            </Link>
           </div>
           <div className="flex items-center space-x-5">
             <input type="checkbox" id="remember" name="remember" />
@@ -43,3 +39,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default contrapage;  

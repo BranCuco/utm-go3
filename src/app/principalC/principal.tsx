@@ -1,17 +1,13 @@
-import Image from "next/image";
-import Link from "next/link"
-
-
-export default function Home() {
+export default function Principal() {
   return (
     <main className="h-screen w-screen gap-2 flex ">
       <div className="h-screen w-1/2 flex flex-col justify-center items-center ">
         <div className="flex items-start">
-          <Image
-          src="/logo UTM-01.png"
-          alt="UTM Go"
-          width={300}
-          height={300}
+          <img
+            src="/logo UTM-01.png"
+            alt="UTM Go"
+            width={300}
+            height={300}
           />
         </div>
         <div className="">
@@ -19,9 +15,7 @@ export default function Home() {
           <div className="flex flex-col space-y-5">
             <input className="border-2 border-gray-300 p-2 rounded-md" type="text" placeholder="Usuario" />
             <input className="border-2 border-gray-300 p-2 rounded-md" type="password" placeholder="Contraseña" />
-            <Link  href= "/principal">
             <button className="bg-[#00A886] text-white p-2 rounded-md">Iniciar sesión</button>
-            </Link>
           </div>
           <div className="flex items-center space-x-5">
             <input type="checkbox" id="remember" name="remember" />
@@ -32,7 +26,7 @@ export default function Home() {
 
       
       <div className="h-screen w-1/2 bg-[#00A886] flex justify-center items-center object-contain">
-        <Image
+        <img
           src="/vinculacion.jpg"
           alt="UTM Go"
           className="object-contain "
