@@ -24,8 +24,6 @@ const contrapage = () => {
           
         </div>
       </div>
-
-      
       <div className="h-screen w-1/2 bg-[#00A886] flex justify-center items-center object-contain">
         <Image
           src="/vinculacion.jpg"
