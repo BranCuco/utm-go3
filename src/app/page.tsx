@@ -15,19 +15,24 @@ export default function Home() {
           />
         </div>
         <div className="">
-          <p className="font-black">Inicio de sesión</p>
-          <div className="flex flex-col space-y-5">
-            <input className="border-2 border-gray-300 p-2 rounded-md" type="text" placeholder="Usuario" />
-            <input className="border-2 border-gray-300 p-2 rounded-md" type="password" placeholder="Contraseña" />
-            <Link  href= "/principal">
-            <button className="bg-[#00A886] text-white p-2 rounded-md">Iniciar sesión</button>
-            </Link>
-          </div>
-          <div className="flex items-center space-x-5">
-            <input type="checkbox" id="remember" name="remember" />
-            <label htmlFor="remember" style={{ color: '#00A886' }}>Recuerdame</label>
-          </div>
-        </div>
+  <p className="font-black">Inicio de sesión</p>
+  <div className="flex flex-col space-y-5">
+    <input className="border-2 border-gray-300 p-2 rounded-md" type="text" placeholder="Usuario" />
+    <input className="border-2 border-gray-300 p-2 rounded-md" type="password" placeholder="Contraseña" />
+    <div className="flex justify-between items-center space-x-5">
+      <Link href="/principalC">
+        <button className="bg-[#00A886] text-white p-2 rounded-md">Iniciar sesión</button>
+      </Link>
+      <div className="flex items-center space-x-5">
+        <input type="checkbox" id="remember" name="remember" />
+        <label htmlFor="remember" style={{ color: '#00A886' }}>Recordar contraseña</label>
+      </div>
+    </div>
+  </div>
+  <Link href="/dashboard/contraolvidada" className="text-green-500">
+    ¿Olvidaste tu contraseña?
+  </Link>
+</div>
       </div>
 
       

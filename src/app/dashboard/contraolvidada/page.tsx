@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 const contrapage = () => {
   return (
@@ -13,16 +14,14 @@ const contrapage = () => {
           />
         </div>
         <div className="">
-          <p className="font-black">Inicio de sesión</p>
+          <p className="font-black">Introduzca su correo </p>
           <div className="flex flex-col space-y-5">
-            <input className="border-2 border-gray-300 p-2 rounded-md" type="text" placeholder="Usuario" />
-            <input className="border-2 border-gray-300 p-2 rounded-md" type="password" placeholder="Contraseña" />
-            <button className="bg-[#00A886] text-white p-2 rounded-md">Iniciar sesión</button>
+            <input className="border-2 border-gray-300 p-2 rounded-md" type="text" placeholder="Correo electronico" />
+            <Link href="/">
+            <button className="bg-[#00A886] text-white p-2 rounded-md">Enviar</button>
+            </Link>
           </div>
-          <div className="flex items-center space-x-5">
-            <input type="checkbox" id="remember" name="remember" />
-            <label htmlFor="remember" style={{ color: '#00A886' }}>Recuerdame</label>
-          </div>
+          
         </div>
       </div>
 

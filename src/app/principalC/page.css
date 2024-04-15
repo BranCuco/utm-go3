@@ -1,0 +1,25 @@
+.page {
+    position: relative;
+    /* background-image from the folder public */
+    background-image: url('../../../public/utm2.webp');
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .content {
+    position: relative;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
